@@ -3,3 +3,4 @@ npx create-react-app facebook-messenger-clone
 
 # Dependencies
 
+# Firebase
