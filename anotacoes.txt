@@ -3,4 +3,10 @@ npx create-react-app facebook-messenger-clone
 
 # Dependencies
 
+npm install @material-ui/core
+
 # Firebase
+
+#
+ctrl+space = import
+cannot read type of undefined = reset npm start '-'
