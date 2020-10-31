@@ -1,14 +1,16 @@
 import { CardContent, Card, Typography } from '@material-ui/core'
-import React from 'react'
+import React, { forwardRef } from 'react' // component flip-move()
 import './Message.css';
 
-function Message({message, username}) {
+const Message = forwardRef(({message, username}, ref) => {
 
     // check currently user that input, to get diferent style in chat
+    // const isUser = username === message.username;
+
     const isUser = username === message.username;
 
     return (
-        <div className={`message ${isUser && 'message__user'}`}>
+        <div ref={ref} className={`message ${isUser && 'message__user'}`}>
             <Card className={isUser ? 'message__userCard' : 'message__guestCard'}>
                 <CardContent>
                     
@@ -23,7 +25,7 @@ function Message({message, username}) {
                 </CardContent>
             </Card>
         </div>
-    )
-}
+    )   
+})
 
 export default Message

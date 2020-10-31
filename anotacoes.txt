@@ -3,7 +3,9 @@ npx create-react-app facebook-messenger-clone
 
 # Dependencies
 npm install firebase
+
 npm install @material-ui/core
+npm i -S react-flip-move
 
 # Firebase
 /messages
