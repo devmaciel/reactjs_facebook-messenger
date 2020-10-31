@@ -11,7 +11,6 @@ https://facebook-messenger-6ba48.web.app
 
 ### Algumas imagens do projeto
 
-Página do Chat Mobile
 [![](https://imgur.com/ZKNp2nB.png)](https://imgur.com/ZKNp2nB.png)
 
 <br /><br />
@@ -26,10 +25,10 @@ Página do Chat Mobile
 #### Ferramentas Utilizadas
 
 -   React JS <br />
-    -- material-ui/core
-    -- material-ui/icons
-    -- react-flip-move
-    -- react-scrollable-feed
+    -- material-ui/core <br />
+    -- material-ui/icons <br />
+    -- react-flip-move <br />
+    -- react-scrollable-feed <br />
 -   Firebase Tools
 -   VSCode
 -   GIT
