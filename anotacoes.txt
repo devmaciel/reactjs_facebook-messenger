@@ -1,10 +1,15 @@
+# Clever Programmer
+https://youtu.be/KB7JEnfc7Dc
+
 # Init
 npx create-react-app facebook-messenger-clone
+(firebase tools -g needed)
 
 # Dependencies
 npm install firebase
 
 npm install @material-ui/core
+npm install @material-ui/icons
 npm i -S react-flip-move
 
 # Firebase
@@ -12,6 +17,17 @@ npm i -S react-flip-move
 --message: string
 --username: string
 --timestamp
+
+# Hosting
+firebase Init
+->Hosting
+->Existing project
+->'your project in firebase'
+-> PUBLIC DIRECTORY: 'build'
+-> y
+
+npm run build
+firebase deploy
 
 #..
 ctrl+space = import

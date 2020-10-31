@@ -5,15 +5,16 @@
 }
 
 .message__user {
-    margin-left: auto;
-    color: white;
-    text-align: left !important;
+	margin-left: auto;
+	color: white;
+	text-align: left !important;
 }
 
 .message__userCard {
-    background-color: #0b81ff !important;
+	background-color: #0b81ff !important;
+	color: white !important;
 }
 
 .message__guestCard {
-    background-color: #e9e9eb !important;
+	background-color: #e9e9eb !important;
 }
