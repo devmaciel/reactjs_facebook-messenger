@@ -11,12 +11,7 @@ https://facebook-messenger-6ba48.web.app
 
 ### Algumas imagens do projeto
 
-Página do Chat
-[![](https://imgur.com/b6y8q1u.png)](https://imgur.com/b6y8q1u.png)
-
-<br />
-
-Página do Chat em Mobile
+Página do Chat Mobile
 [![](https://imgur.com/ZKNp2nB.png)](https://imgur.com/ZKNp2nB.png)
 
 <br /><br />
