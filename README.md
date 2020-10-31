@@ -30,7 +30,7 @@ Página do Chat em Mobile
 
 #### Ferramentas Utilizadas
 
--   React JS
+-   React JS <br />
     -- material-ui/core
     -- material-ui/icons
     -- react-flip-move
