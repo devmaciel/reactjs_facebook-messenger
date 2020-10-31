@@ -1,3 +1,6 @@
+:root {
+	--name-color:black;
+}
 .message {
 	padding: 10px;
 	margin: 10px;
@@ -17,4 +20,15 @@
 
 .message__guestCard {
 	background-color: #e9e9eb !important;
+}
+
+.typography {
+	display: flex;
+	font-size: 15px !important;
+}
+
+.typography__p {
+	margin-right: 3px;
+	font-weight: bold;
+	color:var(--name-color);
 }

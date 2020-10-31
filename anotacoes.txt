@@ -11,6 +11,7 @@ npm install firebase
 npm install @material-ui/core
 npm install @material-ui/icons
 npm i -S react-flip-move
+npm install --save react-scrollable-feed
 
 # Firebase
 /messages

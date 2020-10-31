@@ -1,5 +1,5 @@
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Message from './Message';
 import firebase from 'firebase';
@@ -7,6 +7,7 @@ import db from './firebase';
 import FlipMove from 'react-flip-move';
 import SendIcon from '@material-ui/icons/Send';
 import { IconButton } from '@material-ui/core'; //wrap the icon as a button
+import ScrollableFeed from 'react-scrollable-feed'
 
 function App() {
 
@@ -32,8 +33,8 @@ function App() {
   // we can have more than one useEffect, that is a listenner from firestore
   useEffect(() => {
     db.collection('messages')
-      .orderBy('timestamp', 'desc')
-      .limit(100)
+      .orderBy('timestamp', 'asc')
+      .limitToLast(10)
       .onSnapshot(snapshot => {
         setMessages(snapshot.docs.map(doc => ({id: doc.id, message: doc.data()})))
       })
@@ -53,12 +54,21 @@ function App() {
     setInput('');
   }
 
+
   return (
     <div className="App">
-        <p>v1.0.0</p>
-        <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" alt=""/>
-        <h1>Facebook Messenger Clone</h1>
-        <h2>Welcome, {username ? username : 'Unknown User'}</h2>
+        <p>v1.1.0</p>
+        <h2 className="app__h1">{username ? username : 'Unknown User'}</h2>
+        
+        <FlipMove className="app__flipMove">
+          <ScrollableFeed>
+          {
+            messages.map(({id, message}) => (
+              <Message key={id} username={username} message={message} />
+            ))
+          }
+          </ScrollableFeed>
+        </FlipMove>
 
         <form className="app__form">
           <FormControl className="app__formControl">
@@ -71,18 +81,10 @@ function App() {
             
           </FormControl>          
         </form>
-        
-        <FlipMove>
-            <p>
-              {
-                messages.map(({id, message}) => (
-                  <Message key={id} username={username} message={message} />
-                ))
-              }
-            </p>
-        </FlipMove>
+
     </div>
   );
 }
+
 
 export default App;

@@ -1,3 +1,7 @@
+* {
+	overflow-x: hidden;
+}
+
 .App {
 	text-align: center;
 }
@@ -8,8 +12,9 @@
 	bottom: 0;
 	z-index: 1;
 	background-color: #e9e9eb;
-	width: 90%;
-	margin: 20px;
+	width: 80vw;
+	max-width: 90vw;
+	margin: 20px 20px;
 }
 
 .app__formControl {
@@ -23,4 +28,23 @@
 
 .app__iconButton {
 	flex: 0;
+}
+
+.app__h1 {
+	color: blue;
+}
+
+.app__flipMove {
+	/* background-color: red; */
+	height: 100%;
+	max-height: 65vh;
+	width: 100vw;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* trick, scroll transparent */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }

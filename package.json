@@ -13,6 +13,7 @@
     "react-dom": "^17.0.1",
     "react-flip-move": "^3.0.4",
     "react-scripts": "4.0.0",
+    "react-scrollable-feed": "^1.2.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
