@@ -20,7 +20,7 @@ https://facebook-messenger-6ba48.web.app
 -   HTML5
 -   CSS3
 -   Javascript
--   Firebase/Firestore/Cloud Functions
+-   Firebase/Firestore
 
 #### Ferramentas Utilizadas
 
